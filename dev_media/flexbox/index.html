@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        h1{
+            font-family: Arial;
+            text-align: center;
+        }
+
+        /* Flex box */
+        .container{
+            /* Tranforma o filhos em itens flexíveis. */
+            display: flex;
+            /* flex-direction por padrão ele coloca os itens em linha, mas pode ser alterado para column formando uma coluna única. */
+            flex-direction: row;
+            /* Usado para centralizar itens em linha, e align-items: center; para centralizar itens em coluna. */
+            justify-content: center;
+            
+            /* Faz com que os itens quebrem de linha quando não cabem */
+            flex-wrap: wrap;
+            
+            /* É a shorthand do direction de do wrap flex-flow: row wrap; não faz sentido, pos usando apenas o flex-wrap tem o mesmo resultado */
+            
+            border: 1px solid black;
+        }
+
+        
+
+
+        
+        .box{
+            background-color: darkblue;
+            /* min-width: 200px;
+            min-height: 200px; */
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font: bold 25px Arial;
+            color: white;   
+            
+            border: 1px solid black;
+            box-sizing: border-box;
+
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando modelo de FlexBox!</h1>
+    <div class="container">
+        <!-- .box${$}*4 criar div enumeradas -->
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

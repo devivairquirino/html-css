@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .block{
+            position: fixed;
+
+            border: 1px solid black;
+            width: 400px;
+            height: 400px;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: lightblue;
+            display: flex;
+            flex-flow: column wrap;
+        
+        }
+        .items{
+            background-color: lightcoral;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            justify-content: s;
+        }
+        p{
+            display: flex;
+            border: 1px solid;
+            align-items: flex-end;
+        }
+        p img{
+            
+            width: 30%;
+            align-self: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flex box</h1>
+    <div class="block">
+        <div class="items item1"></div>
+        <div class="items item2"></div>
+        <div class="items item3"></div>
+        <div class="items item4"></div>
+        <div class="items item5"></div>
+        <div class="items item6"></div>
+        
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ex eos dolorum ab facere commodi rerum autem fugiat eum! Culpa ad enim velit, veniam rem nostrum expedita inventore vitae numquam?<img src="https://img.freepik.com/fotos-gratis/amor-romance-perfurado-coracao-de-papel_53876-87.jpg?w=2000" alt=""></p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative
+    </title>
+    <style>
+        *{
+            margin: 0;
+        }
+        #box{
+            border: 5px solid;
+            height: 500px;
+            width: 500px;
+            position: relative;
+            
+        }
+        .circle{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50px;
+            position: absolute;
+           right: -25px;
+           top: 17px;
+        }
+        .centro{
+            border: 5px solid;
+            width: 120px;
+            height: 250px;
+            box-sizing: border-box;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <p>oi</p>
+    <p>ejskl</p>
+    <div id="box">
+        <div class="centro">
+            <div class="circle"></div>
+        </div>
+    </div>
+</body>
+</html>

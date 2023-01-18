@@ -1,0 +1,23 @@
+main{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:22px;                                          
+}
+header{
+    text-align: center;
+   
+}
+
+h2{
+    font-weight: normal;
+    color: #88100f;
+}
+
+h3{
+    text-decoration: underline;
+    color:#88100f;
+    text-decoration: overline;
+}
+p{
+    line-height: 43px;
+    
+}

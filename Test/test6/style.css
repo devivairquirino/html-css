@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid black;
+
+    width: calc(100%/3 - 20px);
+    margin: 10px;
+    
+}
+
+.block-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.block-img{
+    height: 200px;
+    
+    
+}
+.desc{
+    padding: 15px;
+    flex-grow: 1;
+}

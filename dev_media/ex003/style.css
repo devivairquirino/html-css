@@ -1,0 +1,45 @@
+.logo{
+    width: 150px;
+    margin-bottom: 20px;
+}
+body{
+    font:normal 16px Verdana;
+    text-align: center;
+}
+#header{
+    border-bottom:1px solid #DE8E37;
+    padding-bottom: 30px;
+    width: 700px;
+    margin:auto;
+}
+a{
+    color: black;
+    margin:15px;
+}
+h1{
+    font-size:1.6rem;
+}
+h2{
+    font-size:1.3rem;
+    font-weight:normal;
+    color: #DE8E37; 
+}
+.vitrine{
+    width:700px;
+    margin-bottom: 15px;
+}
+
+.produtos{
+    
+    background-color:#DE8E37;
+    width:575px;
+    color:white;
+    padding: 15px 62px;
+    margin: auto;
+}
+.produtos > img{
+    width: 400px;
+}
+span{
+    font-weight: bold;
+}

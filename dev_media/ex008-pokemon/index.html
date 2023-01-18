@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <script>
+        function ativarMusica(){
+            let box = document.getElementById('musica');
+            let tocar= document.getElementById('song');
+            box.style.display='none';
+            tocar.play();
+            
+        }
+        function carregar(){
+            let box = document.getElementById('musica');
+            box.style.display='block';
+        }
+        function fechar(){
+            let box = document.getElementById('musica');
+            box.style.display='none';
+        }
+        function soundsPokemons(sound){
+            let sound1= document.getElementById('sound1');
+            let sound2= document.getElementById('sound2');
+            let sound3= document.getElementById('sound3');
+            switch (sound){
+                case 1:
+                    sound1.play();
+                    break;
+                case 2:
+                    sound2.play();
+                    break;
+                default:
+                    sound3.play();
+                }
+        }
+    </script>
+</head>
+<body onLoad="setTimeout(carregar, 1500);">
+    
+    <header>
+        <h1>Pokemon</h1>
+    </header>
+    <div id="capa"><img src="img/capa.jpg" alt="capa"></div>
+    <div id="musica" >
+        <div class="atencao"><p>!</p></div>
+        <div class="info-music">
+            <p>
+            Esse site possui uma playlist musical. Deseja reproduzir enquanto navega?
+                </p>
+        </div>
+        <div class="botoes">
+            <input type="button" value="SIM" onclick="ativarMusica();">
+            <input type="button" value="NÃO " onclick="fechar();">
+        </div>
+        
+</div>
+    <main>
+        <h1>Pokémon</h1>
+        <article class="area info">
+            
+            <p>Pokémon é uma das principais franquias de jogos de todos os tempos. A saga começou em 1996 com Pokémon Red e Blue, para Gameboy Color, e o seu sucesso foi tão grande que deu origem a um desenho animado e jogos que fazem sucesso até hoje, como Pokémon X e Y, Pokémon Fire Red, Pokémon Heart Gold e muitos outros. A série já teve games que fizeram sucesso nos consoles e nos portáteis, e agora a ideia é dominar também os celulares com Pokémon Go. <br><br>Veja abaixo três dos principais personagens da primeira temporada:
+            </p>
+        </article>
+        <section class="area cards">
+            <div class="card card-sombra">
+                <!-- SONS POKEMONS -->
+                <audio src="bulbasaur.mp3" id="sound1"></audio>
+                <audio src="chamander.mp3" id="sound2"></audio>
+                <audio src="pikachu.mp3" id="sound3"></audio>
+                <h2>#001 - Bulbassauro</h2>
+                <img src="img/Bulbasaur.png" alt="Pokémon Bulbassauro" onmouseover="soundsPokemons(1);" onclick="soundsPokemons(1);">
+                <div class="informacoes">
+                    <ul>
+                        <li>Região: Kanto</li>
+                        <li>Tipo: Grama</li>
+                        <li>Habilidade: Supercrescimento</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card card-sombra">
+                <h2>#004 - Chamander</h2>
+                <img src="img/Charmander.png" alt="Pokémon Chamander" onmouseover="soundsPokemons(2);" onclick="soundsPokemons(2);">
+                <div class="informacoes">
+                    <ul>
+                        <li>Região: Kanto</li>
+                        <li>Tipo: Fogo</li>
+                        <li>Habilidade: Chama</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card card-sombra">
+                <h2>#025 - Pkachu</h2>
+                <img src="img/pikachu.png" alt="Pokémon" onmouseover="soundsPokemons(3);" onclick="soundsPokemons(3);">
+            
+            <div class="informacoes">
+                <ul>
+                    <li>Região: Kanto</li>
+                    <li>Tipo: Elétrico</li>
+                    <li>Habilidade: Estática</li>
+                </ul>
+            </div>
+            </div>
+            
+        </section>  
+        <section class="galeria-pokemon">
+            <p>Veja uma galeria de imagens de alguns Pokémons:</p>
+            <div class="photos">
+                <img src="img/bulbassaur-image.jpg" alt="Pokemon Bulbassauro">
+                <img src="img/charmander-image.png" alt="Pokemon Chamander">
+                <img src="img/pikachu-image.jpg" alt="Pokemon Pikachu">
+                <img src="img/emerald-image.jpg" alt="">
+                <img src="img/arceus-image.jpg" alt="">
+                <img src="img/piplup-image.jpg" alt="">
+            </div>
+            <p>Saiba mais sobre o mundo dos Pokémons em : <a href="https://www.pokemon.com.br">www.pokemon.com.br</a></p>
+        </section>
+    </main>
+    <audio  id="song"
+    loop   src="X2Download.com - Pokémon - Abertura - 1ª temporada (192 kbps).mp3"></audio>
+    <footer>
+     The Pokémon Company
+    </footer>
+</body>
+</html>

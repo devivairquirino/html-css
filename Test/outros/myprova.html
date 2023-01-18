@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova da 9º série</title>
+    <style>
+        #campo1 > input{
+            display: block;
+            
+        }
+        input{
+            margin-bottom:18px;
+        }
+        .resultado{
+            display:inline;
+        }
+        #campo3>p,#campo2>p{
+            margin:0;
+        }
+        #campo3>input{
+            margin:0;
+        }
+        #botao{
+            margin-top:25px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>9º Série A -  Prova de Conhecimentos Gerais</h1>
+
+    <p>Responda todas as questões, utilze rascunhos em papel para realizar os cálculos. Os rascunhos serão recolhidos pela professora após a quarentena.</p>
+    <fieldset id="campo1">
+        <legend>Informações do Aluno</legend>
+        <input type="text" name="nomeAluno" id="" placeholder="Digite o seu nome">
+        <input type="number" name="NdePessoasGrupo" placeholder="Nº de pessoas no grupo">
+
+        <label for="dataNasc">Data de nascimento:</label>
+        <input type="date" name="nascimento" id="dataNascimento">
+
+        <label for="password">Digite uma senha para acessar os dados da pesquisa posteriormente:</label>
+        <input type="password" name="senha" id="senha">
+    </fieldset>
+
+    <fieldset id="campo2">
+        <legend>Matemática</legend>
+
+        <p>
+            <label for="ress1">3+3 =</label>
+            <input type="number" name="ress1" id="ress1" class="resultado">
+        </p>
+        
+        <p>
+            <label for="ress2">10/3 =</label>
+            <input type="number" name="ress2" id="ress2" class="resultado">
+        </p>
+        
+        <p>
+            <label for="ress3">5*2 =</label>
+            <input type="number" name="ress3" id="ress3" class="resultado">
+        </p>
+        <p>
+            <label for="ress4">Essa tarefa foi difícil?</label>
+            <input type="range" name="ress4" id="ress4" class="resultado">
+        </p>
+    </fieldset>
+    <fieldset id="campo3">
+        <legend>Ôpnião quanto a utilização</legend>
+
+        <img src="img.jpg" alt="">
+        <label for="pergunta1">Na frase: "Eu sou bonito" o sujeito é</label>
+        <p>
+            <input type="radio" name="resspt" class="resultado">
+            <label for="ress1pt">Brad Pitt</label>
+        </p>
+        <p>
+            <input type="radio" name="resspt" class="resultado">
+            <label for="ress2pt">João da Padaria</label>
+        </p>
+        <p>
+            <input type="radio" name="resspt" class="resultado">
+            <label for="ress3pt">Você mesmo</label>
+        </p>
+        <p>
+            <input type="radio" name="resspt" class="resultado">
+            <label for="ress4pt">Meus pais</label>
+        </p>
+        <p>
+            <input type="radio" name="resspt" class="resultado">
+            <label for="ress5pt">Eu</label>
+        </p>
+        
+        <p><label for="pergunta2">Complete a frase: "Filho de peixe, peixinho ___"</label>
+        </p>
+        <p>
+            <input type="checkbox" name="" id="" class="resultado">
+            <label for="ress01">é</label>
+        </p>
+        <p>
+            <input type="checkbox" name="" id="" class="resultado">
+            <label for="ress02">tem</label>
+        </p>
+        <p>
+            <input type="checkbox" name="" id="" class="resultado">
+            <label for="ress03">verde</label>
+        </p>
+        <p>
+            <input type="checkbox" name="" id="" class="resultado">
+            <label for="ress04">bonito</label>
+        </p>
+        <p>
+            <input type="checkbox" name="" id="" class="resultado">
+            <label for="ress05">maria</label>
+        </p>
+    </fieldset>
+    <fieldset id="campo4">
+        <legend>Dê uma nota para sua professora:</legend>
+        <label for="">Sua professora explica bem a matéria?</label>
+        <input type="range" name="" id="">
+    </fieldset>
+    <fieldset>
+        <legend>Opiniões</legend>
+        <label for="">Digite a sua opnião sobre a disciplina</label>
+        <p><textarea name="" id="" cols="80" rows="7"></textarea></p>
+    </fieldset>
+    <input type="button" id="botao" value="Gravar resposta">
+</body>
+</html>

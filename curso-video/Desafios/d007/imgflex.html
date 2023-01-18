@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Flexível</title>
+    <link rel="shortcut icon" href="imagens/favicon_io/favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            margin: 0px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagem flexível!</h1>
+    <p>Você está vendo a imagem ampliada? Experimente ampliar o tamanho da sua janela para uma melhor experiência.</p>
+    <picture>
+        <source media="(max-width: 600px)" srcset="imagens\paisagem-recortada545x754.jpg">
+        <img src="imagens/paisagem-1340x754.jpg" alt="paisagem">
+    </picture>
+</body>
+</html>

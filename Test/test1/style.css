@@ -1,0 +1,44 @@
+
+@font-face {
+    font-family: 'Work';
+    src: url('WorkSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: rgb(172, 172, 172);
+    font-family: 'Work';
+    font-weight: normal;
+    margin:0;
+    overflow-y: hidden;
+}
+h1,h2{
+    content: 'oi';
+    color:red;
+    text-decoration:underline;
+
+}
+main{
+    width: 700px;
+    margin:auto;
+    background-color: white;
+    padding: 10px 20px;
+    height: 800px;
+    
+}
+p::first-letter{
+    font-size:40px;
+}
+p::first-line{
+    color:purple;
+}
+.paragrafo{
+    color:blue;
+}
+.primeiro{
+    font-weight:bold;
+
+}
+.segundo{
+    font-style:italic;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="soma.js"></script>
+    <title>Soma</title>
+    <style>
+        body{
+            background-color: lightblue;
+            font-family: monospace;
+        }
+        input{
+            width: 80px;
+        }
+        mark{
+            background-color:lightpink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Some dois números!</h1>
+    <p>
+        <label for="n1">Digite um número: </label>
+        <input type="number" name="n1" id="n1">
+    </p>
+    
+    <p>
+        <label for="n2">Digite um número: </label>
+        <input type="number" name="n2" id="n2">
+    </p>
+    
+    <input type="button" value="Somar" onclick="somar()">
+    <p>
+        <label for="ress">Resultado: </label>
+        <input type="text" name="ress" id="ress" disabled>
+    </p>
+
+    <h1><mark>Testando caracteres &lt; &nbsp; &nbsp; &gt;     &#x1F604</mark></h1>
+    <ul><li>hoje</li></ul>
+</body>
+</html>

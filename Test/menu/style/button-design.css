@@ -1,0 +1,29 @@
+:root{
+    --cor0: black;
+}
+.button-menu{
+    height: 35px;
+    width: 40px;
+    border: 1px solid var(--cor0);
+    position: relative;   
+}
+.linhas{
+    background-color: var(--cor0);
+    border-radius: 5px;
+    height: 5px;
+    width: 90%;
+    /* espaça e centralizar as linhas na horizontal */
+    margin: 5px auto;
+
+    /* delay para transformar as linhas */
+    transition-duration: .5s;
+    transition-property: transform;
+}
+/* diferença de max e min, 
+max: diz que até aquele tamanho a instrução será executada 
+min: diz que a partit daquele tamanho a instrução será executada*/
+@media (min-width: 600px){
+    .button-menu{
+        display: none;
+    }
+}

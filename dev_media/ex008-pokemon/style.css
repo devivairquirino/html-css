@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    
+}
+body{
+    font-family: sans-serif;
+}
+header, footer{
+    background-color: #f97100;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    font-size: 22px;
+    height: 60px;
+    
+}
+header h1{
+    
+    font-weight:normal;
+}
+#capa{
+    text-align: center;
+}
+#capa img{
+    width: 100%;
+    max-width: 1800px;
+    min-height: 100px;
+  
+}
+main{
+    width: 100%;
+    padding: 15px;
+    max-width: 1000px;
+    margin: auto;
+    box-sizing: border-box;
+    
+    
+}
+main h1{
+    text-align: center;
+}
+.info{
+    font-size: 18px;
+    line-height: 30px;
+    margin: 20px auto;
+}
+.area {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    overflow-x: auto;
+}
+.card{
+    min-width: 230px;
+    width: 320px;
+    height:380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right:30px;
+    background-color: #ffb500;
+    border-radius: 12px; 
+    /* conteudo */
+    color: white;
+    padding: 10px;
+    box-sizing: inherit;
+}
+.card img{
+    width: 150px;
+    height: 150px;
+    margin: 15px 0;
+}
+.card img:hover,.card img:active{
+    width: 160px;
+    height: 160px;
+    box-shadow: 1px 0px 20px 8px gold;
+    background-color: rgba(255, 217, 0, 0.774);
+    border-radius: 50px;
+}
+.card-sombra{
+    box-shadow: inset 0 0 15px 12px #ed8317;
+}
+.informacoes{
+    width:100%;
+    margin: 12px 0;
+}
+.galeria-pokemon{
+    width:100%;
+    max-width: 1024;
+    margin: 30px auto 0 auto;
+    
+    font-size: 18px;
+    
+}
+.photos{
+    overflow-x: scroll;
+    display: flex;
+    margin:25px auto;
+
+}
+.photos img{
+    margin: 30px 10px;
+    max-width: 100%;
+    
+    box-shadow: 4px 6px 12px 0px #838383d4
+}
+
+#musica{
+    margin: auto;
+    width: 300px;
+    height:300px;
+    
+    background-color: white;
+    position: fixed ;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    box-shadow: 1px 1px 0 100vw rgba(82, 81, 81, 0.425);
+}
+.atencao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #f97100;
+
+    
+}
+.atencao p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: #f97100;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 100px;
+}
+.info-music{
+    padding: 14px;
+    font-size: 15px;
+}
+.botoes{
+    text-align: center;
+
+}
+input{
+    border: 1px solid #f97100;
+    background-color: white;
+    margin: 10px auto;
+    width:150px;
+    height: 50px;
+}
+input:hover{
+    background-color: #f97100;
+    color: white;
+}

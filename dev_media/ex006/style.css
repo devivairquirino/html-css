@@ -1,0 +1,60 @@
+body{
+    margin:0;
+    font-family: sans-serif;
+}
+h1,h2{
+    margin:0;
+}
+.topo{
+    background-color: orange;
+    text-align: center;
+    padding: 13px;
+    margin-bottom: 30px;
+}
+.topo span{
+    font-weight: normal;
+    font-size: 25px;
+    color: white; 
+}
+.article-about{
+    max-height: 300px;
+    max-width: 70vw;
+    margin: 0 auto;
+    padding: 0 25px;
+    overflow: auto;
+}
+.section-photos{
+    margin: auto;
+    padding: 25px;
+    max-width: 70vw;
+}
+.section-photos img{
+    margin: 0 1px;
+    width: calc((100%/3) - 2px);
+    
+}
+.area-photos{
+    
+    margin-top: 25px;
+    display: flex;
+    overflow: auto;
+}
+footer{
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 7px;
+}
+.test{
+    background-color: red;
+    height: 100px;
+    width:200px;
+    margin: auto;
+    opacity: 0%;
+    text-align: center;
+    
+}
+.test:hover{
+    opacity: 100%;
+}
+

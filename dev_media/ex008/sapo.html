@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapinho Cururu</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #box{
+            background-color:  rgb(224, 224, 224);
+            border: 3px solid black;
+            width: 600px;
+            height: 650px;
+            margin: 20px auto;
+            position: relative;
+            
+        }
+        #cabeca{
+            background-color: white;
+            width: 350px;
+            height: 350px;
+            margin: 20px auto 0 auto;
+            border-radius: 200px;
+            position: relative;
+        }
+        .olhos{
+            /* Cor e borda */
+            background-color: white;
+            border: 10px solid black;
+            border-radius: 100px;
+            /* tamanho */
+            width: 80px;
+            height: 80px;
+            /* centralizar iris */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            
+        }
+        .olhos div{
+            background-color: #44538C;
+            border: 10px solid black;
+            border-radius: 100px;
+            width: 30px;
+            height: 30px;
+        }
+        /* alinha olhos */
+        .olho-left{
+            left: 50px;
+        }
+        .olho-right{
+            right:50px;
+        }
+        .meio-testa{
+            border-radius: 115px/68px;
+            /* Cor e borda */
+            border-bottom: 10px solid black;
+           
+            /* tamanho */
+            width: 50px;
+            height: 75px;
+            position: absolute;
+
+            top: -53px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        .superior{
+            width: 340px;
+            height: 200px;
+            border-bottom: 15px solid;
+            position: absolute;
+            margin: 0 auto;
+            top: 32px;
+            left: 0;
+            right: 0;
+            border-radius: 170px/68px;
+   
+            
+        }
+        .lados{
+            border: 10px solid;
+            width: 100px;
+            height: 50px;
+            border-radius: 150px/100px;
+            
+            position: absolute;
+        }
+        .t1{
+            top: 8px;
+            left: 70px;
+            transform: rotate(25deg);
+            border-bottom: transparent;
+            border-right: transparent;
+        }
+        .t2 {
+            top: 8px;
+            right: 70px;
+            transform: rotate(330deg);
+            border-bottom: transparent;
+            border-left: transparent;
+        }
+        .inferior{
+            border: 10px solid;
+            /* border-top: transparent; */
+            width: 340px;
+            height: 80px;
+            position:absolute;
+            top: 50px;
+
+            border-radius:150px/50px;
+            /* centralizar */
+            left:0;
+            right:0;
+            margin: 0 auto;
+        }
+        .boca{
+            width: 0; 
+            height: 0;
+            border-top: 70px solid ;
+            border-left: 70px solid ;
+            border-right:70px solid transparent;
+            border-bottom:70px solid transparent;
+
+           
+            border-radius: 30px;
+
+            position: absolute;
+            top: 60px;
+            
+        }
+        .b1{
+            transform: rotate(-45deg);
+            left: 10px;
+        }
+        .b2{
+            transform: rotate(135deg);
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="cabeca">
+            <div class="boca b1"></div>
+            <div class="boca b2"></div>
+            
+            <div class="lados t1"></div>
+            <div class="lados t2"></div>
+            <div class="meio-testa"></div>
+            <div class="superior"></div>
+            
+            <div class="olhos olho-left"><div></div></div>
+            <div class="olhos olho-right"><div></div></div>
+
+            
+            
+           
+        </div>
+    </div>
+    
+</body>
+</html>

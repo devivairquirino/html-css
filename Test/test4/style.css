@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+}
+h1,h2{
+    margin:0;
+}
+.fundo1{
+    padding-top: 100px;
+    background-attachment: fixed;
+    background-image: url(img/img1.jpg);
+    background-size: 200px 300px;
+    margin-bottom:100px;
+    background-repeat: no-repeat;
+    background-color: gray;
+    min-height:500px;
+    background-position: center;
+}
+.fundo2{
+    padding: 100px 0;
+    background-image: url(img/img2.jpg);
+    background-size:cover;
+    min-height: 500px;
+    background-attachment: fixed;
+}
+

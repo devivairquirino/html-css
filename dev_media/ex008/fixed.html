@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position: fixed</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        div{
+            border: 3px solid black;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 10px;
+            font: bold 30px Arial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .fixa{
+            width: 50px;
+            
+            position:fixed;
+            background-color: red;
+            top: 0;
+            left: 50px;   
+            border-radius: 100px;        
+
+
+        }
+        .absolute{  
+            background-color: green;
+            position: absolute;
+
+        }
+        .olho{
+            background-color: black;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        span{
+            background-color: white;
+            width: 20px;
+            height: 10px;
+            border-radius: 100px;
+        }
+        .left{
+            top: 50px;
+            left: 20px;
+        }
+        .right{
+            top: 50px;
+            left: 90px;
+        }
+        .nariz{
+            background-color: yellow;
+            width: 10px;
+            height: 30px;
+            border-radius: 150px;
+            
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="fixa">1</div>
+    <div class="absolute"><section class="nariz"></section></div>
+    <div class="olho left"><span></span></div>
+    <div class="olho right"><span></span>
+    </div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+</body>
+</html>

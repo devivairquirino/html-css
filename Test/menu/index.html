@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Flexivel</title>
+    <link rel="stylesheet" href="style/button-design.css">
+    <script src="scripts/botao-menu.js"></script>
+    <script>
+        function ativar_menu(){
+            let menu= document.getElementById('aba-menu');
+            if(menu.style.visibility==='visible'){
+                menu.style.visibility='hidden';
+            }
+            else{
+                menu.style.visibility='visible';
+            }
+            
+        }
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            border-bottom: 1px solid black;
+            background-color: white;
+            height: 50px;
+            position: fixed;
+            width: 100%;
+            
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            margin: 10px;
+            
+        }
+        ul{
+            top: 51px;
+            position: absolute;
+            background-color: red;
+            height: 100vh;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            visibility: hidden;
+            
+
+          
+
+        }
+        @media (max-width: 320px){
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="button-menu" onclick="menu(),ativar_menu()">
+            <div class="linhas" id="l1"></div>
+            <div class="linhas" id="l2"></div>
+            <div class="linhas" id="l3"></div>
+        </div>
+        <nav> 
+            
+            <ul type="none" id="aba-menu">
+                <a href="#">
+                    <li>HOME</li>
+                </a>
+                <a href="#">
+                    <li>QUARTOS</li>
+                </a>
+                <a href="#">
+                    <li>SOBRE</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <img src="http://cbissn.ibict.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png" alt="" style="width: 100%  ;">
+</body>
+</html>

@@ -1,0 +1,40 @@
+body{
+    margin:0;
+    
+}
+h1,h2{
+    color:white;
+    margin:0 auto;
+    padding: 7px;
+    width:300px;
+    
+}
+h1{
+    background-color: black;
+}
+h2{
+    background-color: red;
+}
+#header{
+    padding: 40px;
+    background-image: url(img/capa.jpg);
+    background-attachment:fixed;
+    min-height: 600px;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+#fundo-doutor{
+    background-image: url(img/img1.jpg);
+    height: 150px;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+    background-attachment:fixed;
+}
+#info{
+    text-align: center;
+}
+#sample{
+    padding:50px;
+}
