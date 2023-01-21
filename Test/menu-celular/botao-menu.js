@@ -22,6 +22,4 @@ function menu(){
         linha[0].style.transform='rotate(45deg)';
         linha[2].style.transform='rotate(135deg)';
     }
-    
-
 }
