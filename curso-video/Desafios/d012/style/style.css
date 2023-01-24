@@ -35,12 +35,12 @@ section p{
     line-height: 50px;
 }
 #fundo1{
-    background-image: url('../images/joaninha.jpg');
+    background-image: url('../images/background001.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
 #fundo2{
-    background-image: url('../images/carta.jpg');
+    background-image: url('../images/background002.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
