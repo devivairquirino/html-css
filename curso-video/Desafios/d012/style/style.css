@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Sriracha&display=swap');
+:root{
+    --cor0:white;
+    --cor1:black;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: var(--cor1);
+    color: var(--cor0);
+    text-align: center;
+
+    padding: 48px;
+    
+}
+header h1{
+    font-family: 'Passion One', cursive;
+    font-size: 70px;
+}
+h1 span{
+    font-size: 50px;
+}
+header p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main{
+    padding: 25px;
+    font-size: 23px;
+}
+section p{
+    font-family: Sriracha, cursive;
+    padding-bottom: 45px;
+    line-height: 50px;
+}
+#fundo1{
+    background-image: url('../images/joaninha.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+#fundo2{
+    background-image: url('../images/carta.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.img-fundo{
+    padding: 25px 75px;
+    margin: 15px -50px;
+}
+.img-fundo p{
+    color: white;
+    padding: 5px;
+}
+div{
+    background-color: rgba(0, 0, 0, 0.322);
+    max-width: 290px;
+}
+footer{
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding:12px;
+}
+footer p {
+    color:white;
+    
+}
+footer a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
