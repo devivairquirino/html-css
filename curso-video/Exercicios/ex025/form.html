@@ -36,6 +36,21 @@
             height: 10px;
             
         }
+        input#enviar {
+        
+            width: 120px;
+            background-color: white;
+            color: red;
+            font-weight: bold;
+            border: 2px solid red;
+            border-radius: 50%;
+            padding: 10px;
+
+            box-shadow: 2px 2px 6px rgba(34, 34, 34, 0.418);
+        }
+        input#enviar:hover{
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -50,7 +65,7 @@
         <p>
             Sobrenome: <input type="text" name="sobrenome" id="sobrenome">
         </p>
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar" id="enviar">
     </form>
 </body>
 </html>
