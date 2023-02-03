@@ -34,18 +34,13 @@
     <h1>Exemplo de Formulário</h1>
     <form action="cadastro.js" method="post">
         <fieldset>
-            <legend>Somar dois Números</legend>
+            <legend></legend>
             <p>
-                <label for="in1">Número 1: </label>
-                <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML= Number(in1.value) + Number(in2.value)">
+                <label for="iano">Em que ano você nasceu?</label>
+                <input type="number" name="ano" id="iano" min="1900" max="2022" oninput="calcIdade()">
             </p>
             <p>
-                <label for="in2">Número 2: </label>
-                <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML= Number(in1.value) + Number(in2.value)">
-            </p>
-            <p>
-                <label for="isoma">Soma: </label>
-                <output id="isoma">0</output>
+                <output id="idade">-</output>
             </p>
             <p>
                 <input type="submit" value="Enviar">
@@ -53,5 +48,13 @@
             </p>
         </fieldset>
     </form>
+    <script>
+        function calcIdade(){
+            const idade= document.getElementById('idade');
+            const ano_nasc= document.getElementById('iano')
+            const ano_atual= new Date().getFullYear();
+            idade.innerHTML=  ano_atual - Number(ano_nasc.value);
+        }
+    </script>
 </body>
 </html>
