@@ -1,15 +1,40 @@
 @charset "UTF-8";
 body{
-    background-color: blue;
+   background-image: url('../imagens/cev-portrait.jpg');
+   background-position: center bottom;
 }
 h1::after{
     content: '-->Modo Retrado<--';
     color: black;
     display: block;
-    transform: rotate(90deg);
-    margin: 300px auto 0px auto;
-    width: 400px;
     
-    transition: 2s;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 300px;
+    animation: animacao 1s linear alternate infinite;
 
+}
+
+@keyframes animacao {
+    0%{
+        top: 0vh;
+        
+    }
+    50%{
+        top:47vh;
+    }
+
+    100%{
+        top: 94vh;
+    }
+}
+@keyframes girar {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+
+    }    
 }
