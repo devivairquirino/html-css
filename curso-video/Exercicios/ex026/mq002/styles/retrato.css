@@ -1,0 +1,15 @@
+@charset "UTF-8";
+body{
+    background-color: blue;
+}
+h1::after{
+    content: '-->Modo Retrado<--';
+    color: black;
+    display: block;
+    transform: rotate(90deg);
+    margin: 300px auto 0px auto;
+    width: 400px;
+    
+    transition: 2s;
+
+}
