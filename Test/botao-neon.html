@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botao Neon</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            background-color: black;
+            height: 50px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-top: 50vh;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            overflow: hidden;
+            border-radius: 20px;
+  
+            
+        }
+        .box::after{
+                background-image: conic-gradient(transparent,transparent, transparent, #993399); 
+                content: ' ';
+                width: 300px;
+                height: 300px;
+                position: absolute;
+                animation: girar 5s linear infinite;
+        
+            }
+            .box::before{
+                background-image: conic-gradient(transparent,transparent, transparent, #39ff14); 
+                content: ' ';
+                width: 300px;
+                height: 300px;
+                position: absolute;
+                animation: girar 5s linear infinite;
+                animation-delay: -2s;
+        }
+        h2{
+            position: relative;
+            color: white;
+            z-index: 2;
+            font-size: 2em;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; 
+        }
+        span{
+
+            position: absolute;
+            inset: 3px;
+            z-index:1;
+            border-radius: 16px;
+            background-color: black;
+            
+            
+        }
+        @keyframes girar{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span></span>
+        <h2>CLICAR</h2>
+    </div>
+</body>
+</html>
