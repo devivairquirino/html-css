@@ -11,12 +11,13 @@ html,body{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 header{
-    background-color: rgb(138, 135, 135);
+    background-color: rgb(138, 138, 138);
     min-height: 10vh;
 }
 header h1{
     padding: 10px;
     text-align: center;
+    color: white;
 }
 section#menu-hamburguer{
     background-color: lightgray;
@@ -51,7 +52,7 @@ nav a{
     padding: 10px;
     font-weight: bold;
     border-bottom: 2px solid rgba(65, 65, 65, 0.267);
-    width: calc(100vw - 20px);
+    width: 100vw;
     
 
 }
