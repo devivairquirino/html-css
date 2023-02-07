@@ -6,26 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Site Minha versão</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/print.css" media="print">
+    <script src="scripts/menu.js"></script>
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
 
-        <nav>
-            <section id="menu-hamburguer">
-                <div id="linha1" class="linhas"></div>
-                <div id="linha2" class="linhas"></div>
-                <div id="linha3" class="linhas"></div>
-            </section>
-             <section id="links-menu">
-                 <a href="#">Opção 1</a>
-                 <a href="#">Opção 2</a>
-                 <a href="#">Opção 3</a>
-                 <a href="#">Opção 4</a>
-                 <a href="#">Opção 5</a>
-             </section>
-        </nav>
+
     </header>
+    <nav>
+        <section id="menu-hamburguer" onclick="ocultarExibir()">
+            <div id="linha1" class="linhas"></div>
+            <div id="linha2" class="linhas"></div>
+            <div id="linha3" class="linhas"></div>
+        </section>
+         <section id="links-menu">
+             <a href="#">Opção 1</a>
+             <a href="#">Opção 2</a>
+             <a href="#">Opção 3</a>
+             <a href="#">Opção 4</a>
+             <a href="#">Opção 5</a>
+         </section>
+    </nav>
     <main>
         <article>
             <h1>Testando Media Queries</h1>

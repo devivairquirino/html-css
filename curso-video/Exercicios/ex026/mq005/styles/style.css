@@ -7,40 +7,62 @@
 }
 html,body{
     height: 100vh;
-    width: 100vw;
+
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 header{
     background-color: rgb(138, 135, 135);
-    padding-top: 2vh;
     min-height: 10vh;
-    
 }
 header h1{
+    padding: 10px;
     text-align: center;
 }
 section#menu-hamburguer{
     background-color: lightgray;
     min-height: 5vh;
-    padding: 1px;
+    padding: 4px;
+    border-bottom: 2px solid rgba(65, 65, 65, 0.267);
+    box-shadow: 3px 4px 9px rgba(80, 79, 79, 0.507);
+
 }
 div.linhas{
     height: 4px;
     background-color: black;
     width: 30px;
-    margin: 5px auto;
-    border-radius: 10px;
-
+    margin: 4px auto;
+    border-radius: 10px;    
 }
 
 section#links-menu{
-    display: flex;
+    display: none;
     flex-direction: column;
+    position: absolute;
+}
+nav{
+    position: sticky;
+    top: 0;
 }
 nav a{
     background-color: rgb(97, 97, 97);
     color: white;
     text-decoration: none;
     text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid rgba(65, 65, 65, 0.267);
+    width: calc(100vw - 20px);
+    
 
+}
+main{
+    padding: 5px;
+}
+main h1{
+    padding: 15px 0;
+    text-align: center;
+}
+main p{
+    text-align: justify;
+    padding: 15px 3px;
 }
