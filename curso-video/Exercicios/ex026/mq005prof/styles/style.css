@@ -2,12 +2,14 @@
 
 *{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 body{
     background-color: lightgray;
 }
 header{
-    background-color: gray;
+    background-color: rgb(177, 177, 177);
 }
 header h1{
     padding: 10px;
@@ -20,4 +22,27 @@ nav > ul > li > a{
     display: block;
     padding: 10px;
     background-color: rgb(78, 78, 78);
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border-top: 2px solid gray;
+}
+nav a:hover{
+    background-color: gray;
+}
+main{
+    width: 90vw;
+    background-color: white;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+article h2{
+    padding-bottom: 20px;
+
+}
+article p{
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
 }
