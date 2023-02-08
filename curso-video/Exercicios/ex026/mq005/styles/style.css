@@ -52,8 +52,12 @@ nav a{
     padding: 10px;
     font-weight: bold;
     border-bottom: 2px solid rgba(65, 65, 65, 0.267);
-    width: 100vw;
+    width: 100%;
     
+
+}
+nav a:hover{
+    background-color: rgb(141, 141, 141);
 
 }
 main{
