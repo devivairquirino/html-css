@@ -1,0 +1,40 @@
+.container{
+    background-color: #333;
+    border: 3px solid red;
+    padding: 15px;
+
+    display: grid;
+    gap: 5px;
+    
+    grid-template-areas: 
+        'header sidebar sidebar sidebar content'
+        'header sidebar sidebar sidebar content'
+        'footer footer footer footer footer';
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: 400px;
+}   
+
+#header{
+    grid-area: header;
+
+}
+#sidebar{
+    grid-area: sidebar;
+   
+}
+#content{
+    grid-area: content;
+
+}
+#footer{
+    grid-area: footer;
+}
+
+
+.container div{
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+}
