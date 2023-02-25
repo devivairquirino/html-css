@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 400px;
+        }
+    </style>
+    <script>
+        function mudar(i){
+            let img1=document.getElementsByTagName("img")[i];
+            let img2= document.getElementsByTagName("img")[i+1];
+
+            let temp= img1.src;
+            img1.src=img2.src;
+            img2.src=temp;
+        }
+
+    </script>
+</head>
+<body>
+    <img src="../images/gyutaro.jpg" alt="" onclick="mudar(0)">
+    <img src="../images/daki.png" alt="" onclick="mudar(1)">
+    <img src="../images/demon-slayer.png" alt="" onclick="mudar(1)">
+</body>
+</html>
