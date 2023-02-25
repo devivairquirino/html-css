@@ -89,6 +89,11 @@ div.cards{
     box-shadow: 2px 2px 6px rgba(46, 46, 46, 0.479);
 
 }
+.sidebar div.cards:hover{
+    cursor: pointer;
+    width: 210px;
+    box-shadow: 2px 2px 20px rgb(255, 0, 0);
+}
 div.cards p{
     background-color: gray;
     padding: 5px;
